@@ -16,7 +16,7 @@ public class Sort_colors {
             else if (nums[mid] == 1) {
                 mid++;
             }
-            else { // nums[mid] == 2
+            else {
                 swap(nums, mid, high);
                 high--;
             }
@@ -29,13 +29,13 @@ public class Sort_colors {
         nums[j] = temp;
     }
 
-    // Main method to test
+
     public static void main(String[] args) {
         int[] nums = {2, 0, 2, 1, 1, 0};
 
         sortColors(nums);
 
-        // Print result
+
         for (int num : nums) {
             System.out.print(num + " ");
         }

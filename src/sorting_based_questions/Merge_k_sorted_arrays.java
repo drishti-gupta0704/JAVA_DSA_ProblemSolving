@@ -7,6 +7,8 @@ public class Merge_k_sorted_arrays {
         PriorityQueue<int[]> pq = new PriorityQueue<>(
                 (a, b) -> a[0] - b[0]
         );
+
+        int[][]arr = {{2,3,1},{2,3,4},{3,4,7}};
         // {value, arrayIndex, elementIndex}
         for (int i = 0; i < arr.length; i++) {
             pq.add(new int[]{arr[i][0], i, 0});
